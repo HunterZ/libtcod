@@ -284,3 +284,10 @@ jobs:
           file_glob: true
           tag: ${{ github.ref }}
           overwrite: true
+
+  verify-shaders:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Verify shader sources
+        run: ./scripts/update_shader.py --check
