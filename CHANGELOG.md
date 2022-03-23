@@ -10,6 +10,8 @@ Versions since `1.7.0` only track ABI breaks and not API breaks.
 ### Changed
 - Libtcod can now be built without SDL by passing the `-DLIBTCOD_SDL2=disable` flag to CMake.
 - SDL-based accumulate functions can now handle a non-window render target.
+- The OpenGL2 renderer now defaults to the nearest filter unless `SDL_HINT_RENDER_SCALE_QUALITY` is set otherwise.
+  This makes that renderer consistent with all other renderers.
 
 ### Deprecated
 - Older REXPaint functions using `TCOD_list_t` have been deprecated.
