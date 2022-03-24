@@ -1569,7 +1569,7 @@ int main(int argc, char* argv[]) {
   int current_sample = 0;  // index of the current sample
   TCOD_key_t key{};
   TCOD_mouse_t mouse{};
-  static constexpr char* FONT = "data/fonts/dejavu10x10_gs_tc.png";
+  static constexpr char* FONT = "data/fonts/dejavu12x12_gs_tc.png";
   bool creditsEnd = false;
   auto root_console = tcod::Console{80, 50};  // The main console to be presented.
   auto tileset = tcod::load_tilesheet(FONT, {32, 8}, tcod::CHARMAP_TCOD);
